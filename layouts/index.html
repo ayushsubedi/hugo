@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
-    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+    <title>Data Literacy</title>
   </head>
 
   <body>
-    <div class="container">
-      <main id="main">
-        <div id="home-jumbotron" class="jumbotron text-center">
-          <h1>{{ .Title }}</h1>
-          <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
-        </div>
-      </main>
-    </div>
+    {{ partial "navigation.html" . }}
+    {{ partial "feature.html" . }}
+    <hr />
+    {{ partial "supported_by.html" . }}
+    <br />
+    <hr />
+    {{ partial "course_units.html" . }}
+    <br />
+    <hr />
+    {{ partial "community.html" . }}
+    <br />
+    <hr />
+    {{ partial "footer.html" . }}
+    <script>
+      $(document).ready(function() {
+        $(".slider").bxSlider({
+          auto: true,
+          autoControls: false,
+          stopAutoOnClick: true,
+          pager: true
+        });
+      });
+    </script>
   </body>
 </html>
