@@ -14,18 +14,6 @@
 
 <link rel="stylesheet" href="/css/bulma.css" />
 
-
-<script
-  defer
-  src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
     <title>Data Literacy</title>
   </head>
 
@@ -38,7 +26,9 @@
 >
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img src="/images/main_logo.png" width="200" height="" />
+          <p class="title is-4 has-text-primary is-spaced">
+            Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
+          </p>
     </a>
     <a
       role="button"
@@ -53,11 +43,11 @@
     </a>
   </div>
   <div id="navbarBasic" class="navbar-menu">
-    <div class="navbar-start">
+    <div class="navbar-end">
       <a class="navbar-item" href="/">
         Home
       </a>
-      <a class="navbar-item" href="portals.html">
+      <a class="navbar-item" href="/portals">
         External Portals
       </a>
       <div class="navbar-item has-dropdown is-hoverable">
@@ -68,7 +58,7 @@
           <a class="navbar-item">
             Unit 1
           </a>
-          <a class="navbar-item" href="unit2.html">
+          <a class="navbar-item" href="/unit2">
             Unit 2
           </a>
           <a class="navbar-item">
@@ -84,20 +74,123 @@
           <a class="navbar-item">
             Future Units
           </a>
+          
         </div>
       </div>
-    </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary"  href="/contact">
-            <strong>Contact</strong>
-          </a>
-        </div>
-      </div>
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" href="/contact">
+                  <strong>Contact</strong>
+                </a>
+              </div>
+            </div>
     </div>
   </div>
 </nav>
 
+    
+    <section class="section">
+      <div class="columns is-mobile is-centered">
+        <div
+          class="column is-four-fifths-mobile is-four-fifths-tablet is-two-thirds-desktop is-two-thirds-widescreen is-two-thirds-fullhd"
+        >
+          <div class="columns is-desktop">
+            <div class="column is-6-desktop">
+              <section>
+                <p class="title is-3 has-text-primary is-spaced">
+                  Contact us
+                </p>
+                <p class="subtitle is-6">
+                  If you have queries regarding the program or units please
+                  contact us. You may also use this contact form to get in touch
+                  with us to contribute to this project. We are always seeking
+                  community support to make this portal better. Thank you.
+                </p>
+              </section>
+            </div>
+            <div class="column is-6-desktop">
+              <form
+                method="POST"
+                action="https://formspree.io/datafornepal@gmail.com"
+              >
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input
+                      name="name"
+                      class="input"
+                      type="text"
+                      placeholder="Your name"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      name="_replyto"
+                      class="input"
+                      type="email"
+                      placeholder="Your email"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      name="message"
+                      class="textarea"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="control">
+                  <button type="submit" class="button is-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    <footer class="footer">
+    <div class="content">
+        <div class="columns is-mobile is-centered">
+            <div class="column is-two-thirds">
+                <div class="columns">
+                    <div class="column">
+                        <p class="title is-6 has-text-white">Quick Links</p>
+                        <a class="subtitle is-6 has-text-white" href="index.html">Home</a><br />
+                        <a class="subtitle is-6 has-text-white" href="portals.html">External Portals</a><br />
+                        <a class="subtitle is-6 has-text-white" href="contact.html">Contact</a><br />
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="title is-6 has-text-white">Course Units</p>
+                        <p class="has-text-white">
+                            Unit 1<br />Unit 2<br />Unit 3<br />Unit 4<br />Unit 5
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="title is-6 has-text-white">Contact</p>
+                        <p class="has-text-white">email@email.com<br />0140000000</p>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-48x48">
+                            <img src="/images/cc.png" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
   </body>
 </html>
