@@ -7,5 +7,78 @@
 
   <body>
     {{ partial "navigation.html" . }}
+    <!-- feature text and image -->
+    <section class="section">
+      <div class="columns is-mobile is-centered">
+        <div
+          class="column is-four-fifths-mobile is-four-fifths-tablet is-two-thirds-desktop is-two-thirds-widescreen is-two-thirds-fullhd"
+        >
+          <div class="columns is-desktop">
+            <div class="column is-6-desktop">
+              <section>
+                <p class="title is-3 has-text-primary is-spaced">
+                  Contact us
+                </p>
+                <p class="subtitle is-6">
+                  If you have queries regarding the program or units please
+                  contact us. You may also use this contact form to get in touch
+                  with us to contribute to this project. We are always seeking
+                  community support to make this portal better. Thank you.
+                </p>
+              </section>
+            </div>
+            <div class="column is-6-desktop">
+              <form
+                method="POST"
+                action="https://formspree.io/datafornepal@gmail.com"
+              >
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input
+                      name="name"
+                      class="input"
+                      type="text"
+                      placeholder="Your name"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      name="_replyto"
+                      class="input"
+                      type="email"
+                      placeholder="Your email"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      name="message"
+                      class="textarea"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="control">
+                  <button type="submit" class="button is-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    {{ partial "footer.html" . }}
   </body>
 </html>
