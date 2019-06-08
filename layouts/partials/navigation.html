@@ -27,12 +27,26 @@
       <a class="navbar-item" href="{{ "/" | relURL }}">
         Home
       </a>
-      <a class="navbar-item" href="{{ "/portals" | relURL }}">
-        External Portals
-      </a>
+
+
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Workshops
+              </a>
+              <div class="navbar-dropdown">
+            
+                <a class="navbar-item" href="{{ "/unit2" | relURL }}">
+                  June-July 2019
+                </a>
+            
+            
+              </div>
+            </div>
+      
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          Units
+          Course Units
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item">
@@ -50,13 +64,23 @@
           <a class="navbar-item">
             Unit 5
           </a>
-          <hr class="navbar-divider" />
-          <a class="navbar-item">
-            Future Units
-          </a>
-          
         </div>
+        
       </div>
+
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Resources
+                    </a>
+                    <div class="navbar-dropdown">
+                  
+                      <a class="navbar-item" href="{{ "/unit2" | relURL }}">
+                        External Portals
+                      </a>
+                  
+                  
+                    </div>
+                  </div>
             <div class="navbar-item">
               <div class="buttons">
                 <a class="button is-primary" href="{{ "/contact" | relURL }}">
