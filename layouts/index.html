@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     {{ partial "header.html" . }}
     <title>Data Literacy</title>
@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <br />
     {{ partial "navigation.html" . }}
     {{ partial "feature.html" . }}
     <hr />
@@ -27,16 +28,14 @@
     <hr />
     {{ partial "community.html" . }}
     <br />
-    <hr />
-    {{ partial "organized_supported.html" . }}
     <br />
-    <hr />
     {{ partial "footer.html" . }}
     <script>
       $(document).ready(function() {
         $(".slider").bxSlider({
           auto: true,
           autoControls: false,
+          controls: false,
           stopAutoOnClick: true,
           pager: true
         });
