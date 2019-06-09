@@ -1,22 +1,12 @@
 <!-- navigation bar -->
-<nav
-  class="navbar has-shadow is-spaced is-fixed-top"
-  role="navigation"
-  aria-label="main navigation"
->
+<nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ "/" | relURL }}">
-          <p class="title is-4 has-text-primary is-spaced">
-            Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
-          </p>
+      <p class="title is-4 has-text-primary is-spaced">
+        Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
+      </p>
     </a>
-    <a
-      role="button"
-      class="navbar-burger burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasic"
-    >
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -27,67 +17,55 @@
       <a class="navbar-item" href="{{ "/" | relURL }}">
         Home
       </a>
-
-
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                Workshops
-              </a>
-              <div class="navbar-dropdown">
-            
-                <a class="navbar-item" href="{{ "/unit2" | relURL }}">
-                  June-July 2019
-                </a>
-            
-            
-              </div>
-            </div>
-      
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Workshops
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="{{ "/" | relURL }}">
+            June-July 2019
+          </a>
+        </div>
+      </div>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           Course Units
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <a class="navbar-item" href="{{ "/" | relURL }}">
             Unit 1
           </a>
           <a class="navbar-item" href="{{ "/unit2" | relURL }}">
             Unit 2
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="{{ "/" | relURL }}">
             Unit 3
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="{{ "/" | relURL }}">
             Unit 4
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="{{ "/" | relURL }}">
             Unit 5
           </a>
         </div>
-        
       </div>
-
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                      Resources
-                    </a>
-                    <div class="navbar-dropdown">
-                  
-                      <a class="navbar-item" href="{{ "/unit2" | relURL }}">
-                        External Portals
-                      </a>
-                  
-                  
-                    </div>
-                  </div>
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary" href="{{ "/contact" | relURL }}">
-                  <strong>Contact</strong>
-                </a>
-              </div>
-            </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Resources
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="{{ "/portals" | relURL }}">
+            External Portals
+          </a>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="{{ "/contact" | relURL }}">
+            <strong>Contact</strong>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

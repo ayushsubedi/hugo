@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     {{ partial "header.html" . }}
     <title>Contact</title>
@@ -7,73 +7,71 @@
 
   <body>
     {{ partial "navigation.html" . }}
-    <!-- feature text and image -->
+    <br />
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Contact us
+          </h1>
+          <h2 class="subtitle">
+            If you have queries regarding the program or units please contact
+            us. You may also use this contact form to get in touch with us to
+            contribute to this project. We are always seeking community support
+            to make this portal better. Thank you.
+          </h2>
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="columns is-mobile is-centered">
         <div
-          class="column is-four-fifths-mobile is-four-fifths-tablet is-two-thirds-desktop is-two-thirds-widescreen is-two-thirds-fullhd"
+          class="column is-full-mobile is-full-tablet is-one-thirds-desktop is-half-widescreen is-half-fullhd"
         >
-          <div class="columns is-desktop">
-            <div class="column is-6-desktop">
-              <section>
-                <p class="title is-3 has-text-primary is-spaced">
-                  Contact us
-                </p>
-                <p class="subtitle is-6">
-                  If you have queries regarding the program or units please
-                  contact us. You may also use this contact form to get in touch
-                  with us to contribute to this project. We are always seeking
-                  community support to make this portal better. Thank you.
-                </p>
-              </section>
+          <form
+            method="POST"
+            action="https://formspree.io/datafornepal@gmail.com"
+          >
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input
+                  name="name"
+                  class="input"
+                  type="text"
+                  placeholder="Your name"
+                />
+              </div>
             </div>
-            <div class="column is-6-desktop">
-              <form
-                method="POST"
-                action="https://formspree.io/datafornepal@gmail.com"
-              >
-                <div class="field">
-                  <label class="label">Name</label>
-                  <div class="control">
-                    <input
-                      name="name"
-                      class="input"
-                      type="text"
-                      placeholder="Your name"
-                    />
-                  </div>
-                </div>
 
-                <div class="field">
-                  <label class="label">Email</label>
-                  <div class="control">
-                    <input
-                      name="_replyto"
-                      class="input"
-                      type="email"
-                      placeholder="Your email"
-                    />
-                  </div>
-                </div>
-
-                <div class="field">
-                  <label class="label">Message</label>
-                  <div class="control">
-                    <textarea
-                      name="message"
-                      class="textarea"
-                      placeholder="Your message"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="control">
-                  <button type="submit" class="button is-primary">
-                    Submit
-                  </button>
-                </div>
-              </form>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input
+                  name="_replyto"
+                  class="input"
+                  type="email"
+                  placeholder="Your email"
+                />
+              </div>
             </div>
-          </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea
+                  name="message"
+                  class="textarea"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="control">
+              <button type="submit" class="button is-primary">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

@@ -6,23 +6,37 @@
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Quick Links</p>
                         <hr />
-                        <a class="subtitle is-6 has-text-grey-light" href="index.html">Home</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="index.html">June-July 2019 Workshop</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="portals.html">External Portals</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="contact.html">Contact</a><br />
-                        </p>
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/" | relURL }}">Home</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/" | relURL }}">June-July 2019 Workshop</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/portals" | relURL }}">External Portals</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/contact" | relURL }}">Contact</a>
                     </div>
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Course Units</p>
                         <hr />
-                        <p class="has-text-grey-light">
-                            Unit 1 <br />Unit 2<br />Unit 3<br />Unit 4<br />Unit 5
-                        </p>
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/unit1" | relURL }}">Unit 1</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/unit2" | relURL }}">Unit 2</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/unit3" | relURL }}">Unit 3</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/unit4" | relURL }}">Unit 4</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="{{ "/unit5" | relURL }}">Unit 5</a>
                     </div>
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Contact</p>
                         <hr />
-                        <p class="has-text-grey-light">email@email.com<br />0140000000</p>
+                        <span class="icon">
+                            <i class="fas fa-envelope has-text-grey-light"></i>
+                        </span>
+                        <span>
+                            <a class="is-6 has-text-grey-light" href="mailto:datafornepal@gmail.com">datafornepal@gmail.com</a>
+                        </span>
+
+                        <br />
+                        <span class="icon">
+                            <i class="fas fa-phone has-text-grey-light"></i>
+                        </span>
+                        <span class="is-6 has-text-grey-light">
+                            +977 1-4236000
+                        </span>     
                     </div>
 
                     <div class="column">
@@ -41,7 +55,7 @@
                     <div class="column">
                         <p class="title is-6 has-text-grey-lighter">Organizer and Supporter</p>
                         <hr />
-                        <img src="images/organized.jpg" />
+                        <img src="{{ "images/organized.jpg" | relURL }}" />
                         
                     </div>
                 </div>
