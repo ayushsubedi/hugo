@@ -2,17 +2,11 @@
 <html lang="en" class="has-navbar-fixed-top">
   <head>
     <title>External Portals</title>
-
     
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <link
       href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"
       rel="stylesheet"
     />
-
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -20,12 +14,17 @@
     
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
-<meta property="og:site_name" content="Data Literacy" />
-<meta property="og:title" content="Data Literacy" />
+<meta property="og:site_name" content="Nepal Data Literacy Program" />
+<meta property="og:title" content="Nepal Data Literacy Program" />
 <meta property="og:url" content="https://dataliteracy.github.io/" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="World Bank Nepal, Data Literacy" />
+<meta
+  property="og:description"
+  content="Nepal Data Literacy Program is designed to catalyze stronger data-driven decision-making by government and non-government actors (mass media, civil society, and academia) through targeted Data Literacy Workshop to help Nepal achieve its development goals."
+/>
+
+<link rel="shortcut icon" href="/images/logo.png" /> <link
+rel="image_src" href="/images/header4.jpg" />
 
 
 <link rel="stylesheet" href="/css/bulma.css" />
@@ -38,13 +37,29 @@
   src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
 ></script>
 
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-142181287-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-142181287-1");
+</script>
+
   </head>
+
   <body>
     
 <nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <p class="title is-4 has-text-primary is-spaced">
+      <p class="title is-5 has-text-primary is-spaced">
         Nepal Data Literacy Program <sup class="subtitle is-6 has-text-danger">(BETA)</sup>
       </p>
     </a>
@@ -64,7 +79,7 @@
           Workshops
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="/workshop1">
             June-July 2019
           </a>
         </div>
@@ -74,19 +89,19 @@
           Course Units
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="/unit1">
             Unit 1
           </a>
           <a class="navbar-item" href="/unit2">
             Unit 2
           </a>
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="/unit3">
             Unit 3
           </a>
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="/unit4">
             Unit 4
           </a>
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="/unit5">
             Unit 5
           </a>
         </div>
@@ -112,24 +127,71 @@
   </div>
 </nav>
     <br />
-    <section class="section">
-      <div class="columns is-mobile is-centered">
-        <div
-          class="column is-three-fifths-mobile is-three-fifths-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd"
-        >
-          <p class="title is-4 has-text-primary has-text-centered is-spaced">
-            External Portals
-          </p>
-          <p class="subtitle is-6 has-text-centered">
-            Data literacy can support Nepal government’s priorities by fostering
-            an environment where citizens have the knowledge to use data for
-            evidence-based decision making and to increase transparency and
-            accountability in public.
-          </p>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title">
+                External Portals
+              </h1>
+              <h2 class="subtitle">
+                The table below consists of a curated list of open data sources
+                that are relevant in context to Nepal. Nepal Data Literacy
+                Program does not guarantee the availability of these external
+                portals at all times. Please report to us if you question the
+                reliability of any of the sources listed below. Also, if you
+                know of an external data source not listed, please contribute by
+                filling in the form on the right.
+              </h2>
+            </div>
+            <div class="column">
+             
+                <div class="columns is-mobile is-centered">
+                  <div
+                    class="column is-full-mobile is-full-tablet is-one-thirds-desktop is-half-widescreen is-half-fullhd"
+                  >
+                    <form
+                      method="POST"
+                      action="https://formspree.io/datafornepal@gmail.com"
+                    >
+                      <div class="field">
+                        <label class="label has-text-grey-lighter">Email</label>
+                        <div class="control">
+                          <input
+                            name="email_request"
+                            class="input"
+                            type="email"
+                            placeholder="Your email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <label class="label has-text-grey-lighter">Link to data source</label>
+                        <div class="control">
+                          <input
+                            name="external_portal_link"
+                            class="input"
+                            type="text"
+                            placeholder="Link"
+                          />
+                        </div>
+                      </div>
+                      <div class="control">
+                        <button type="submit" class="button">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <hr />
+
     <section class="section">
       <div class="columns is-mobile is-centered">
         <div
@@ -405,6 +467,32 @@
                 </td>
                 <td>HRRP Nepal</td>
               </tr>
+
+
+                            <tr>
+                              <td>
+                                <a href="https://nepstat.iids.org.np/">NepStat Database Portal</a>
+                              </td>
+                              <td>
+Time series data of Nepal on Economics, Banking and Finance,
+Agriculture, Environment etc
+                              </td>
+                              <td>Institute for Integrated Development Studies</td>
+                            </tr>
+
+
+                                          <tr>
+                                            <td>
+                                              <a href="http://rds.icimod.org/">Regional Database System</a>
+                                            </td>
+                                            <td>
+Central data repository
+for different thematic areas in the Hindu Kush
+Himalayan (HKH) region
+                                            </td>
+                                            <td>ICIMOD</td>
+                                          </tr>
+              
             </tbody>
           </table>
         </div>
@@ -418,16 +506,14 @@
             <div class="column is-two-thirds">
                 <div class="columns">
                     <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Quick Links</p>
-                        <hr />
+                        <p class="title is-6 has-text-grey-lighter">Quick Links<br/>.....................</p>
                         <a class="subtitle is-6 has-text-grey-light" href="/">Home</a><br />
-                        <a class="subtitle is-6 has-text-grey-light" href="/">June-July 2019 Workshop</a><br />
+                        <a class="subtitle is-6 has-text-grey-light" href="/workshop1">June-July 2019 Workshop</a><br />
                         <a class="subtitle is-6 has-text-grey-light" href="/portals">External Portals</a><br />
                         <a class="subtitle is-6 has-text-grey-light" href="/contact">Contact</a>
                     </div>
                     <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Course Units</p>
-                        <hr />
+                        <p class="title is-6 has-text-grey-lighter">Course Units<br />.......................</p>
                         <a class="subtitle is-6 has-text-grey-light" href="/unit1">Unit 1</a><br />
                         <a class="subtitle is-6 has-text-grey-light" href="/unit2">Unit 2</a><br />
                         <a class="subtitle is-6 has-text-grey-light" href="/unit3">Unit 3</a><br />
@@ -435,8 +521,7 @@
                         <a class="subtitle is-6 has-text-grey-light" href="/unit5">Unit 5</a>
                     </div>
                     <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Contact</p>
-                        <hr />
+                        <p class="title is-6 has-text-grey-lighter">Contact<br />...............</p>
                         <span class="icon">
                             <i class="fas fa-envelope has-text-grey-light"></i>
                         </span>
@@ -444,18 +529,11 @@
                             <a class="is-6 has-text-grey-light" href="mailto:datafornepal@gmail.com">datafornepal@gmail.com</a>
                         </span>
 
-                        <br />
-                        <span class="icon">
-                            <i class="fas fa-phone has-text-grey-light"></i>
-                        </span>
-                        <span class="is-6 has-text-grey-light">
-                            +977 1-4236000
-                        </span>     
+                        
                     </div>
 
                     <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">License</p>
-                        <hr />
+                        <p class="title is-6 has-text-grey-lighter">License<br />...............</p>
                         <span class="icon">
                             <i class="fab fa-creative-commons has-text-grey-light fa-2x"></i>
                         </span>
@@ -463,12 +541,12 @@
                         <span class="icon">
                             <i class="fab fa-creative-commons-by has-text-grey-light fa-2x"></i>
                         </span>
-                        <p class="is-6 has-text-grey-light">World Bank Nepal Data Literacy Program’s content is licensed under a Creative Commons Attribution-ShareAlike 4.0
-                        International License.</p>
+                        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><p class="is-6 has-text-grey-light"> Nepal Data Literacy Program’s content is licensed under a Creative Commons Attribution-ShareAlike 4.0
+                        International License.</p></a>
                     </div>
                     <div class="column">
-                        <p class="title is-6 has-text-grey-lighter">Organizer and Supporter</p>
-                        <hr />
+                        <p class="title is-6 has-text-grey-lighter">Supported By<br />............................</p>
+                        
                         <img src="/images/organized.jpg" />
                         
                     </div>
@@ -477,11 +555,13 @@
         </div>
     </div>
 </footer>
+<script src="/js/hamburger.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("table").DataTable({
           dom: '<"top">frt<"bottom"><"clear">',
-          pageLength: 50
+          pageLength: 50,
+          "bSort": false
         });
       });
     </script>
