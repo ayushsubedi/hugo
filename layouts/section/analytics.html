@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    {{ partial "header.html" . }}
+    <title>Analytics</title>
+  </head>
+
+  <body>
+    {{ partial "navigation.html" . }}
+
+    <br />
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Nepal Data Literacy Portal Analytics
+          </h1>
+          <h2 class="subtitle"></h2>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="columns is-mobile is-centered">
+        <div
+          class="column is-full-mobile is-full-tablet is-four-fifths-desktop is-two-thirds-widescreen is-two-thirds-fullhd"
+        >
+          <iframe
+            style="height: 1600px;"
+            width="100%"
+            height="1600px"
+            src="https://datastudio.google.com/embed/reporting/10xkqazDlAmSggXHzCI6s12rVHIbVd0Dr/page/1M"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <br />
+    <hr />
+    {{ partial "footer.html" . }}
+  </body>
+</html>

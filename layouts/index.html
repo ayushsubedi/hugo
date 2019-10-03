@@ -10,6 +10,11 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script
+      async
+      src="//platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
   </head>
 
   <body>
@@ -45,6 +50,15 @@
     <hr />
     {{ partial "supported_by.html" . }}
     <br />
+    <section>
+      <a
+        class="twitter-timeline"
+        href="https://twitter.com/search?q=%23Data4Nepal"
+        data-tweet-limit="1"
+      >
+        Tweets by @twittername</a
+      >
+    </section>
     <br />
     {{ partial "footer.html" . }}
     <script>
