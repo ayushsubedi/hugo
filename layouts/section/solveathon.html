@@ -51,30 +51,55 @@
   </head>
   <body>
     <div class="container is-fluid">
-      <nav class="navbar">
+      <!-- <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item" href="#">NEPAL SOLVE-A-THON 2019</a
-            ><a
-              class="navbar-burger"
-              role="button"
-              aria-label="menu"
-              aria-expanded="false"
-              ><span aria-hidden="true"></span><span aria-hidden="true"></span
-              ><span aria-hidden="true"></span
-            ></a>
+            >
           </div>
           <div class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
-                <div class="buttons">
+                <!-- <div class="buttons"> -->
                   <a class="button is-light" href="/">Data Literacy Portal</a>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
+      <nav class="navbar has-shadow is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ "/solveathon" | relURL }}">
+      <p class="title is-5 has-text-primary is-spaced">
+        NEPAL SOLVE-A-THON 2019 
+        <!-- <sup class="subtitle is-6 has-text-danger">(BETA)</sup> -->
+      </p>
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasic" class="navbar-menu">
+    <div class="navbar-end">
+
+
+      
+      <div class="navbar-item has-dropdown is-hoverable">
+        
+
+            <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="{{ "/" | relURL }}">
+            <strong>Data Literacy Portal</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
      <section class="section">
         <div class="container has-text-centered">
@@ -295,6 +320,7 @@
           </div>
         </div>
       </section>
+       <hr />
          <section class="section">
         <div class="container">
             <h2 class="title has-text-centered has-text-primary is-4">
@@ -315,9 +341,13 @@
         </div>
       </section>
 
- <section class="section">
+      <hr />
+<section class="section">
            
 <div class="container">
+              <h2 class="title has-text-centered has-text-primary is-4">
+            WHERE AND WHEN?
+              </h2>
         <div class="columns">
           <div class="column is-4-desktop">
             <p class="title is-4 has-text-primary">
@@ -395,6 +425,7 @@
           </div>
         </div>
       </footer>
+      <script src="{{ "js/hamburger.js" | relURL }}"></script>
     </div>
   </body>
 </html>
