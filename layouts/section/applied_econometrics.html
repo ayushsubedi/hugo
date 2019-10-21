@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    {{ partial "header.html" . }}
+    <title>Applied Econometrics for Practitioners
+</title>
+</head>
+
+<body>
+
+    {{ partial "navigation.html" . }}
+    <br />
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Applied Econometrics for Practitioners
+                </h1>
+                <h2 class="subtitle">
+The course aims to teach the tools and techniques of applied statistics while working with complex household survey data. The focus of the course will be on cross-sectional econometric analysis, with some discussion of panel data analysis. The course examples and exercises will focus on issues related to economic development and domestic social issues (e.g. poverty, education, health, labor issues). The course will cover some advanced, but commonly needed, methods of statistical analysis. The emphasis is on applications, not derivations, of methodology. The course will entail a significant amount of data analysis using Stata software.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="columns is-mobile is-centered">
+            <div class="column is-full-mobile is-full-tablet is-four-fifths-desktop is-two-thirds-widescreen is-two-thirds-fullhd">
+                <div class="columns">
+                    <div class="column is-one-fifth">
+                        <div class="tabs">
+                            <ul>
+                                <li id="team1" class="is-active">
+                                    <a onClick="switchTo1()">
+                                        <span>Overview</span>
+                                    </a>
+                                </li>
+                                <li id="team2">
+                                    <a onClick="switchTo2()">
+                                        <span>Course Files</span>
+                                    </a>
+                                </li>
+                                <li id="team3">
+                                    <a onClick="switchTo3()">
+                                        <span>Instructors</span>
+                                    </a>
+                                </li>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column is-four-fifths">
+                       
+                            <div id="team1-content">
+                                {{ partial "econometrics_overview.html" . }}
+                            </div>
+                            <div class="is-hidden" id="team2-content">
+                                {{ partial "econometrics_contents.html" . }}
+                            </div>
+                             <div class="is-hidden" id="team3-content">
+                                {{ partial "econometrics_instructors.html" . }}
+                            </div> 
+                            
+                            
+                    </div>
+                </div>
+            </div>
+    </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        
+        function switchTo1() {
+            removeActive();
+            hideAll();
+            $("#team1").addClass("is-active");
+            $("#team1-content").removeClass("is-hidden");
+        }
+
+        function switchTo2() {
+            removeActive();
+            hideAll();
+            $("#team2").addClass("is-active");
+            $("#team2-content").removeClass("is-hidden");
+        }
+
+        function switchTo3() {
+            removeActive();
+            hideAll();
+            $("#team3").addClass("is-active");
+            $("#team3-content").removeClass("is-hidden");
+        }
+
+        
+        function removeActive() {
+            $("li").each(function () {
+                $(this).removeClass("is-active");
+            });
+        }
+
+        function hideAll() {
+            $("#team1-content").addClass("is-hidden");
+            $("#team2-content").addClass("is-hidden");
+            $("#team3-content").addClass("is-hidden");
+            
+        }
+    </script>
+</body>
+<br />
+<hr />
+{{ partial "footer.html" . }}
+
+</html>
