@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    {{ partial "header.html" . }}
+    <title>Applied Econometrics for Practitioners</title>
+  </head>
+
+  <body>
+    {{ partial "navigation.html" . }}
+    <br />
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Applied Econometrics for Practitioners
+          </h1>
+          <h2 class="subtitle">
+            The course aims to teach the tools and techniques of applied
+            statistics while working with complex household survey data. The
+            focus of the course will be on cross-sectional econometric analysis,
+            with some discussion of panel data analysis. The course examples and
+            exercises will focus on issues related to economic development and
+            domestic social issues (e.g. poverty, education, health, labor
+            issues). The course will cover some advanced, but commonly needed,
+            methods of statistical analysis. The emphasis is on applications,
+            not derivations, of methodology. The course will entail a
+            significant amount of data analysis using Stata software.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-two-thirds">
+          {{ partial "econometrics_contents.html" . }}
+        </div>
+      </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
